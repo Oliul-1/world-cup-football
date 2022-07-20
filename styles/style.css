@@ -1,6 +1,12 @@
+/*---------------- font ------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
 /* common style */
 body{
-    background-color: ;
+    font-family: 'Poppins', sans-serif;
+
 }
 main{
     display: flex;
@@ -22,18 +28,21 @@ main{
     border-radius: 10px;
     align-items: center;
 }
-.banner-title{
-    font-size: 70px;
-}
+
 
 .banner-detiles{
     color: white;
     text-align: center;
+    margin-bottom: 10%;
     height: 424px;
     width: 531px;
     border-radius: 5px;
 
 } 
+.banner-title{
+    font-size: 70px;
+}
+
 
 .button{
     background-color: orangered;
@@ -50,14 +59,25 @@ main{
 }
 
 
-/* aside left */
+/* aside section */
+.aside-section{
+    display: flex;
+    
+}
+
+
+
+/*---------------------
+              aside left or aside button 
+                                -------------------*/
+
 
 .aside-buttons{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    background-color: orange;
+    background-color: rgb(8, 7, 6);
     padding: 20px;
     width: 312px;
     height: 312px;
@@ -65,19 +85,36 @@ main{
 }
 .aside-button {
     padding: 20px;
-    background-color: aqua;
-   border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(233, 236, 236);
+    border-radius: 10px;
 }
 
 
+
+
 /* aside right */
+.matchs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
 .match{
     height: 362px;
     width: 312px;
+    border-radius: 10px;
+    margin: 24px;
+    box-shadow: 1px 1px 2px rgb(226, 187, 187);
 
 }
 .match .match-detiles{
     padding: 20px;
+}
+.match-icons{
+    padding-right: 20px;
 }
 
 
@@ -117,4 +154,40 @@ footer{
 .footer-nav a{
     width: 600px;
 
+}
+.footer-icons{
+    /* margin-left: 2px; */
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- second wed site ----------------*/
+.art-flag-vs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.article-flag{
+    margin: 24px;
+    border: 0.5px solid rgb(166, 166, 196);
+    padding: 30px 50px 30px 50px;
+
+}
+.flags{
+    display: flex;    
+}
+.versus{
+    padding: 5px;
+}
+.flags h1{
+    font-weight: 900px;
 }

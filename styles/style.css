@@ -1,0 +1,52 @@
+/* common style */
+body{
+    background-color: ;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 800px;
+}
+
+/* banner style */
+.banner{
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+.banner-detiles{
+    color: white;
+   text-align: center;
+}
+
+.button{
+    background-color: orangered;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* footer style */
+.footer{
+    background-color: black;
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+
+}
+.footer div{
+    color: white;
+}
+
+.footer div a{
+    text-decoration: none;
+    color: white;
+}

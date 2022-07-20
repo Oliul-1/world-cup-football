@@ -6,7 +6,9 @@
 /* common style */
 body{
     font-family: 'Poppins', sans-serif;
-
+}
+footer{
+    font-family: 'Poppins', sans-serif;
 }
 main{
     display: flex;
@@ -15,9 +17,9 @@ main{
     justify-content: center;
     
 }
-.container{
+.banner{
     width: 1321px;
-    height: 646px;
+    
 }
 
 /* banner style */
@@ -40,7 +42,7 @@ main{
 
 } 
 .banner-title{
-    font-size: 70px;
+    font-size: 3.5em;
 }
 
 
@@ -49,6 +51,10 @@ main{
     color: white;
     padding: 6px;
     border-radius: 5px;
+}
+.button:hover{
+    width: 200px;
+    
 }
 
 .banner-img img{
@@ -92,6 +98,11 @@ main{
     background-color: rgb(233, 236, 236);
     border-radius: 10px;
 }
+.aside-buttons a:hover{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
 
 
 
@@ -116,6 +127,9 @@ main{
 .match-icons{
     padding-right: 20px;
 }
+.special{
+    display: none;
+}
 
 
 
@@ -128,8 +142,8 @@ footer{
     margin-top: 40px;
 }
 .footer-box{
-    width: 800px;
-   padding: 30px;
+    width: 1321px;
+    padding: 30px;
 }
 
 .footer-box div{
@@ -137,9 +151,9 @@ footer{
     color: white;
     margin-top: 80px;
 }
-.footer-box hr{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.footer-box .goal{
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .footer-box div a{
@@ -152,7 +166,7 @@ footer{
 
 }
 .footer-nav a{
-    width: 600px;
+    width: 75%;
 
 }
 .footer-icons{
@@ -190,4 +204,133 @@ footer{
 }
 .flags h1{
     font-weight: 900px;
+}
+
+
+
+
+
+
+/* smaller device */
+
+@media screen and (max-width:576px) {
+    body{
+        width: 576px;
+        justify-content: center;
+       
+    }
+    main{
+        overflow: hidden;
+    }
+    
+    .banner{
+        flex-direction: column;
+        height: 472px;
+        width: 334px; 
+        
+
+    }
+    .banner-detiles{
+        height: 178px;
+        width: 258px;
+        border-radius: 5px;
+        font-size: 0.55em;  
+    }
+
+    .banner-img img{
+        height: 200px;
+        width: 195px;
+        padding-top: 1em;
+    }
+
+    .aside-section{
+        flex-direction: column;
+        
+    }
+
+    .aside-buttons{
+        background-color: white;
+        height: 176px;
+        width: 210px;
+        
+    }
+    
+    .aside-button{
+        font-size: 1em;
+        margin-bottom: 1em;
+        padding: 10px;
+    }
+    
+    .matchs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .art-flag-vs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .footer-box{
+        width: 576px;
+        justify-content: center;
+    }
+    .footer-box div{
+        margin-top: 10px;
+        
+    }
+    .footer-box .footer-nav a{
+        padding-left: 2.em;
+        padding-bottom: 1em;
+    }
+    .footer-nav{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+/* middem device */
+@media screen and (min-width:577px) and (max-width:992px){
+    
+    .banner{
+        height: 398px;
+        width: 734px;
+        border-radius: 20px;
+
+    }
+    .banner-detiles{
+        height: 276px;
+        width: 316px;
+        font-size: 0.7em;
+    }
+    .banner-img img{
+        height: 371px;
+        width: 323px;
+
+    }
+    
+    .aside-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .aside-buttons{
+        grid-template-columns: repeat(3, 1fr);
+        width: auto;
+        height: auto;
+        background-color: rgb(72, 65, 72);
+        
+    }
+    .aside-button{
+        font-size: 16px;
+        justify-content: space-evenly;
+        margin: 1em;
+    }
+    .matchs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .art-flag-vs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
 }

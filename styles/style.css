@@ -2,26 +2,38 @@
 body{
     background-color: ;
 }
-.main{
+main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    
 }
 .container{
-    width: 800px;
+    width: 1321px;
+    height: 646px;
 }
 
 /* banner style */
 .banner{
     display: flex;
+    justify-content: space-evenly;
     background-color: black;
     border-radius: 10px;
-    
+    align-items: center;
+}
+.banner-title{
+    font-size: 70px;
 }
 
 .banner-detiles{
     color: white;
-   text-align: center;
-}
+    text-align: center;
+    height: 424px;
+    width: 531px;
+    border-radius: 5px;
+
+} 
 
 .button{
     background-color: orangered;
@@ -30,23 +42,79 @@ body{
     border-radius: 5px;
 }
 
+.banner-img img{
+    height: 613px;
+    width: 581px;
+    margin-top: 32px;
+
+}
+
+
+/* aside left */
+
+.aside-buttons{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: orange;
+    padding: 20px;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+}
+.aside-button {
+    padding: 20px;
+    background-color: aqua;
+   border-radius: 10px;
+}
+
+
+/* aside right */
+.match{
+    height: 362px;
+    width: 312px;
+
+}
+.match .match-detiles{
+    padding: 20px;
+}
 
 
 
 
 /* footer style */
-.footer{
+footer{
+    display: flex;
+    justify-content: center;
     background-color: black;
     margin-top: 40px;
-    width: 100%;
-    height: 400px;
-
 }
-.footer div{
+.footer-box{
+    width: 800px;
+   padding: 30px;
+}
+
+.footer-box div{
+    text-align: center;
     color: white;
+    margin-top: 80px;
+}
+.footer-box hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.footer div a{
+.footer-box div a{
     text-decoration: none;
     color: white;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+
+}
+.footer-nav a{
+    width: 600px;
+
 }
